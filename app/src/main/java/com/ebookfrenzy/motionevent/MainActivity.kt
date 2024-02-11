@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
             handleTouch(m)
             true
         }
+        binding.root.setOnTouchListener {_, m: MotionEvent ->
+            handleTouch(m)
+            true
+        }
     }
 
     private fun handleTouch(m: MotionEvent)
